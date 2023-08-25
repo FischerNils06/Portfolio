@@ -317,7 +317,7 @@ img {
 
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1490px) {
     #projects {
         grid-template-columns: 1fr;
     }

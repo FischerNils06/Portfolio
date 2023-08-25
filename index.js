@@ -21,7 +21,6 @@ const currenthour = currentdate.getHours();
 const currentminute = currentdate.getMinutes();
 const currentsecond = currentdate.getSeconds();
 const currentage = currentyear - 2006
-console.log(currentmonth, currentday, currentyear);
 nameage.innerHTML = `Mein Name ist Nils Fischer und ich bin ${currentage} Jahre alt. Im Moment besuche ich die IMS an der Kantonsschule Hottingen und am Bildungszentrum Zürichsee in Horgen.`;
 if (currentmonth == 1 && 22 <= currentday >= 1 ) {
     currentage = currentyear - 2007;
@@ -38,7 +37,6 @@ const english = document.querySelector("#english");
 const french = document.querySelector("#french");
 
 function languagesize() {
-    console.log(window.innerWidth);
     if (window.innerWidth < 450) {
         german.innerHTML = 'D';
         english.innerHTML = 'E';
@@ -86,6 +84,9 @@ language.addEventListener('change', () => {
     const myprojectst = document.getElementById("myprojectst");
     const contactt = document.getElementById("contactt");
     const programmingt = document.getElementById("programmingt");
+    const titlelink = document.getElementById("titlelink");
+    const projectlink = document.getElementById("projectlink");
+    const contactlink = document.getElementById("contactlink");
 
     if (selectedValue == "german") {
         nameage.innerHTML = `Mein Name ist Nils Fischer und ich bin ${currentage} Jahre alt. Im Moment besuche ich die IMS an der Kantonsschule Hottingen und am Bildungszentrum Zürichsee in Horgen.`;
@@ -108,6 +109,9 @@ language.addEventListener('change', () => {
         myprojectst.innerHTML = 'Meine Projekte';
         contactt.innerHTML = 'Kontakt';
         programmingt.innerHTML = 'IT - Fähigkeiten';
+        titlelink.innerHTML = 'Startseite';
+        projectlink.innerHTML = 'Projekte';
+        contactlink.innerHTML = 'Kontakt';
 
     } else if (selectedValue == "english") {
         nameage.innerHTML = `My name is Nils Fischer and I am ${currentage} years old. I currently attend the IMS at the Kantonsschule Hottingen and at the Bildungszentrum Zürichsee in Horgen.`;
@@ -130,6 +134,9 @@ language.addEventListener('change', () => {
         myprojectst.innerHTML = 'My Projects';
         contactt.innerHTML = 'Contact';
         programmingt.innerHTML = 'IT - Skills';
+        titlelink.innerHTML = 'Home';
+        projectlink.innerHTML = 'Projects';
+        contactlink.innerHTML = 'Contact';
 
     } else if (selectedValue == "french") {
         nameage.innerHTML = `Je m'appelle Nils Fischer et j'ai ${currentage} ans. Je fréquente actuellement l'IMS au Kantonsschule Hottingen et au Bildungszentrum Zürichsee à Horgen.`;
@@ -152,6 +159,9 @@ language.addEventListener('change', () => {
         myprojectst.innerHTML = 'Mes Projets';
         contactt.innerHTML = 'Contact';
         programmingt.innerHTML = 'Compétences en informatique';
+        titlelink.innerHTML = 'Page d\'accueil';
+        projectlink.innerHTML = 'Projets';
+        contactlink.innerHTML = 'Contact';
 
     }
     
