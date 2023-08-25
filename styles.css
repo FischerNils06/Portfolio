@@ -44,6 +44,12 @@ p {
     margin: 0;
 }
 
+
+.p {
+    color: var(--black);
+    font-size: 1.5rem;
+}
+
 a {
     color: var(--blue);
     text-decoration: none;
@@ -66,6 +72,17 @@ main {
     top: 10%;
     margin-left: 5%;
     
+}
+
+
+
+footer {
+    height: 5%;
+    bottom: 0;
+    width: 100%;
+    font-size: 1rem;
+    position: fixed;
+    text-align: center;
 }
 
 #navl {
@@ -103,6 +120,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
+    width:50%;
     list-style-type: none;
 }
 
@@ -124,10 +142,14 @@ option:checked {
 #image {
     float: right;
     position: relative;
-    display: inline-block;
+    display: flex;
+    justify-content: flex-start;
     margin: 5%;
     border: solid 1px var(--black);
+}
 
+img {
+    border: solid 1px var(--black);
 }
 
 #cv {
@@ -136,6 +158,7 @@ option:checked {
     position: relative;
 
 }
+
 
 #title {
     display: inline-block;
@@ -158,7 +181,7 @@ option:checked {
 
 .t3 {
     font-size: 2.5rem;
-    
+    margin-top: 4rem;
 }
 
 #programming {
@@ -171,6 +194,7 @@ option:checked {
     list-style-type: none;
     justify-content: center;
 }
+
 
 .bar {
     display: inline;
@@ -194,12 +218,117 @@ option:checked {
     grid-template-columns: 1fr 1fr;
     list-style-type: none;
     justify-content: center;
-    width: 90%;
+    width: 80%;
 }
 
+
+
 .project {
-    height: 20rem;
+    height: 35rem;
     width: 96%;
     margin: 2%;
+    
 }
+
+
+
+.project img {
+    border: solid 1px var(--black);
+}
+
+
+
+#button {
+    background-color: var(--white);
+    border: solid 1px var(--black);
+    height: 3rem;
+    width: 14rem;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: var(--black);
+}
+
+#button:hover {
+    background-color: var(--white2);
+    cursor: pointer;
+}
+
+.contact {
+    margin-top: 5rem;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    #cv {
+        width: 90%;
+    }
+
+    .programming {
+        grid-template-columns: 1fr;
+    }
+
+    #projects {
+        grid-template-columns: 1fr;
+        justify-content: left;
+    }
+    .project {
+        height: auto	;
+        width: 100%;
+        white-space: normal;
+        overflow: hidden;
+        hyphens: auto;
+        word-break: normal;
+    }
+
+    .project img {
+        width: 90%;
+        height: fit-content;
+    }
+
+    #image {
+        float:none;
+        justify-content: flex-start;
+        display: block;
+        margin: 5% auto;
+        border: none;
+        }
+
+    #title {
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+
+    #contact {
+        margin-top: 10rem;
+    }
+
+    a {
+        word-break: break-all;
+    }
+
+    #email {
+        word-break: break-all;
+    }
+
+
+
+    
+
+}
+
+@media screen and (max-width: 1600px) {
+    #projects {
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    #navl {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+}
+
 

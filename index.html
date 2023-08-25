@@ -12,21 +12,12 @@
             <ul id="navl">
                 <li><a class="li" href="#title">Startseite</a></li>
                 <li><a class="li" href="#myprojects">Projekte</a></li>
-                <li><a class="li" href="contact.html">Kontakt</a></li>
+                <li><a class="li" href="#contact">Kontakt</a></li>
                 <li id="btns">
-                    <select name="Sprache" id="Sprache">
-                        <option value="Deutsch">Deutsch</option>
-                        <option value="Englisch">English</option>
-                        <option value="Französisch">Français</option>
-                        <option value="Spanisch">Español</option>
-                        <option value="Italienisch">Italiano</option>
-                        <option value="Russisch">Русский</option>
-                        <option value="Chinesisch">中文</option>
-                        <option value="Japanisch">日本語</option>
-                        <option value="Arabisch">العربية</option>
-                        <option value="Türkisch">Türkçe</option>
-                        <option value="Portugiesisch">Português</option>
-                        <option value="Hindi">हिन्दी</option>
+                    <select name="language" id="language">
+                        <option value="german" id="german">Deutsch</option>
+                        <option value="english" id="english">English</option>
+                        <option value="french" id="french">Français</option>
                     </select>
                     <button id="darkmode-btn" class="btn">☾</button>
                 </li>
@@ -46,24 +37,24 @@
                 <p id="nameage"></p>
             </div>
             <div id="languages">
-                <p class="t2">Sprachen</p>
-                <table>
+                <p class="t2" id="languagetitle">Sprache</p>
+                <table id="languagetable">
                     <tr>
-                        <td>Deutsch</td>
-                        <td>Muttersprache</td>
+                      <td id="td1">Deutsch</td>
+                      <td id="td2">Muttersprache</td>
                     </tr>
                     <tr>
-                        <td>Englisch</td>
-                        <td>Niveau B2 in Vorbereitung für C1</td>
+                      <td id="td3">Englisch</td>
+                      <td id="td4">Niveau B2 in Vorbereitung auf Cambridge Advanced (C1)</td>
                     </tr>
                     <tr>
-                        <td>Französisch</td>
-                        <td>Niveau B1</td>
+                      <td id="td5">Französisch</td>
+                      <td id="td6">Niveau B1</td>
                     </tr>
-                </table>
+                  </table>
             </div>
             <div id="programming">
-                <p class="t2">IT - Fähigkeiten</p>
+                <p id="programmingt" class="t2">IT - Fähigkeiten</p>
                 <ul class="programming">
                     <li class="pr">Java</li>
                     <li class="pr"><div class="bar" style="min-width: 15%;"></div></li>
@@ -81,11 +72,11 @@
                     <li class="pr"><div class="bar" style="min-width: 39%;"></div></li>
                     <li class="pr">Bash</li>
                     <li class="pr"><div class="bar" style="min-width: 18%;"></div></li>
-                    <li class="pr">Docker (Konsole)</li>
+                    <li class="pr" id="doc">Docker (Konsole)</li>
                     <li class="pr"><div class="bar" style="min-width: 27%;"></div></li>
                     <li class="pr">YAML-Files</li>
                     <li class="pr"><div class="bar" style="min-width: 30.5%;"></div></li>
-                    <li class="pr">Kubernetes (Konsole)</li>
+                    <li class="pr" id="kub">Kubernetes (Konsole)</li>
                     <li class="pr"><div class="bar" style="min-width: 27.5%;"></div></li>
                 </ul>
                 
@@ -94,37 +85,49 @@
             </div>
         </div>
         <div id="myprojects">
-            <p class="t3">Meine Projekte</p>
+            <p id="myprojectst" class="t3">Meine Projekte</p>
         <div id="projects">
             <div class="project">
-                <p class="t2">Nintendo Webseite</p>
-                <img src="nintendo.png" alt=""  height="60%">
+                <p class="t2">Nintendo Website</p>
+                <img src="nintendo.png" alt=""  height="50%">
+                <p id="nintendosite">Die Nintendo Webseite wurde als Schulprojekt im Fach Projekte Wirtschaft und Recht programmiert.</p>
                 <p>Link: <a href="https://fischernils06.github.io/PRWR_Projekt/">https://fischernils06.github.io/PRWR_Projekt/"</a></p>
                 <p>GitHub: <a href="https://github.com/FischerNils06/PRWR_Projekt">https://github.com/FischerNils06/PRWR_Projekt</a></p>
             </div>
             <div class="project">
                 <p class="t2">Whiteboard</p>
-                <img src="whiteboard.png" alt="" h height="60%">
+                <img src="whiteboard.png" alt="" h height="50%">
+                <p id="whiteboard">Das Whiteboard ist ein fortlaufendes Projekt, zu dem immer mehr funktionen dazukommen. Es kommen alle paar Wochen neue Funktionen dazu oder werden überarbeitet.</p>
                 <p>Link: <a href="https://fischernils06.github.io/Whiteboard/">https://fischernils06.github.io/Whiteboard/</a></p>
                 <p>GitHub: <a href="https://github.com/FischerNils06/Whiteboard">https://github.com/FischerNils06/Whiteboard</a></p>
             </div>
             <div class="project">
                 <p class="t2">Jump n Run Game</p>
-                <img src="jump-n-run.png" alt=""  height="60%">
+                <img src="jump-n-run.png" alt=""  height="50%">
+                <p id="jumpnrun">Das angefangene Jump-n-Run-Game ist immernoch in bearbeitung. Das Ziel ist das Spiel Richtig Spielen zu können und dass es die Highscores per Backend in einer DB speichert.</p>
                 <p>Link: <a href="https://jump-n-run-game-fi5c.vercel.app/">https://jump-n-run-game-fi5c.vercel.app/</a></p>
                 <p>GitHub: <a href="https://github.com/FischerNils06/Jump-n-Run-Game">https://github.com/FischerNils06/Jump-n-Run-Game</a></p>
             </div>
             <div class="project">
                 <p class="t2">Quick-Pac-Man</p>
-                <img src="quickpacman.png" alt=""  height="60%">
+                <img src="quickpacman.png" alt=""  height="50%">
+                <p id="quickpacman">Quick-Pac-Man ist mit pygame programmiert und mein neustes Projekt. Es wurde in den Sommerferien programmiert.</p>
+                <p id="exe">Das exe-file ist unter Release im File game.zip</p>
                 <p>GitHub: <a href="https://github.com/FischerNils06/Quick-Pac-Man">https://github.com/FischerNils06/Quick-Pac-Man</a></p>
-                <p>exe-file unter Release, game.zip</p>
             </div>
         </div>
         </div>
+        <div id="contact">
+            <p id="contactt"class="t3">Kontakt</p>
+            <p class="t2, contact">Nils Fischer</p>
+            <p id="email">E-Mail: nils.fischer06@gmail.com</p>
+            <p id="telephone">Telefon: +41 76 471 15 66</p>
+            <p>GitHub: <a class="p" href="https://github.com/FischerNils06">https://github.com/FischerNils06</a></p>
+            <a href="mailto:nils.fischre06@gmail.com"><button id="button">Email Senden</button></a>
+        </div>
     </main>
     <footer>
-
+        <p>© 2023 Nils Fischer</p>
     </footer>
     <script src="index.js"></script>
 </body>
